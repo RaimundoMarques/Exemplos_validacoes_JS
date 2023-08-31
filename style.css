@@ -28,13 +28,8 @@ h1 {
 #botao {
   text-align: center;
 }
-
-#btn-send {
-  height: 40px;
-  width: 100px;
-}
-
-#refresh {
+button {
+  font-size: 14pt;
   height: 40px;
   width: 100px;
 }

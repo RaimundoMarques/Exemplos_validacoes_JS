@@ -72,42 +72,48 @@ function getDados() {
                 const chaveTurma = document.querySelector('input#turma')
                 this.turma = String(chaveTurma.value)
 
-                // configurando a segurança da variável individualmente
-                /*
-                Object.defineProperty(this, 'ra', {
-                        enumerable: true, //mostra a chave
-                        value: this.ra, //valor
-                        writable: true, //poder alterar ou não o conteúdo da variável
-                        configurable: true //configurável ou não
-                })*/
+                if (this.ra == '' || this.cpf == '' || this.curso == '' || this.turma == '') {
+                        alert("Favor preecher os dados")
+                        window.location.reload(true)
 
-                // configurando a segurança de várias variáveis 
-                Object.defineProperties(this, {
-                        ra: {
+                } else {
+                        // configurando a segurança da variável individualmente
+                        /*
+                        Object.defineProperty(this, 'ra', {
                                 enumerable: true, //mostra a chave
                                 value: this.ra, //valor
                                 writable: true, //poder alterar ou não o conteúdo da variável
                                 configurable: true //configurável ou não
-                        },
-                        cpf: {
-                                enumerable: true, //mostra a chave
-                                value: this.cpf, //valor
-                                writable: false, //poder alterar ou não o conteúdo da variável
-                                configurable: true //configurável ou não
-                        },
-                        curso: {
-                                enumerable: true, //mostra a chave
-                                value: this.curso, //valor
-                                writable: true, //poder alterar ou não o conteúdo da variável
-                                configurable: true //configurável ou não
-                        },
-                        turma: {
-                                enumerable: true, //mostra a chave
-                                value: this.turma, //valor
-                                writable: true, //poder alterar ou não o conteúdo da variável
-                                configurable: true //configurável ou não
-                        }
-                })
+                        })*/
+
+                        // configurando a segurança de várias variáveis 
+                        Object.defineProperties(this, {
+                                ra: {
+                                        enumerable: true, //mostra a chave
+                                        value: this.ra, //valor
+                                        writable: true, //poder alterar ou não o conteúdo da variável
+                                        configurable: true //configurável ou não
+                                },
+                                cpf: {
+                                        enumerable: true, //mostra a chave
+                                        value: this.cpf, //valor
+                                        writable: false, //poder alterar ou não o conteúdo da variável
+                                        configurable: true //configurável ou não
+                                },
+                                curso: {
+                                        enumerable: true, //mostra a chave
+                                        value: this.curso, //valor
+                                        writable: true, //poder alterar ou não o conteúdo da variável
+                                        configurable: true //configurável ou não
+                                },
+                                turma: {
+                                        enumerable: true, //mostra a chave
+                                        value: this.turma, //valor
+                                        writable: true, //poder alterar ou não o conteúdo da variável
+                                        configurable: true //configurável ou não
+                                }
+                        })
+                }
         }
         const aluno = new Aluno()
         console.log(aluno)
