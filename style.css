@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+:root {
+  --primary-color: rgb(38, 56, 59);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #ffffff;
+}
+
+h1 {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 7px;
+  text-align: center;
+}
+
+#dadosAluno {
+  list-style: none;
+}
+
+#botao {
+  text-align: center;
+}
+
+#btn-send {
+  height: 40px;
+  width: 100px;
+}
+
+#refresh {
+  height: 40px;
+  width: 100px;
+}

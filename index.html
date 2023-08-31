@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title id="title"></title>
+</head>
+
+<body>
+    <h1 id="h1"></h1>
+    <p class="texto"></p>
+
+    <div class="container">
+        <ul id="dadosAluno">
+            <label for="ra">RA</label>
+            <li><input type="text" id="ra"></li>
+
+            <label for="cpf">CPF</label>
+            <li><input type="text" id="cpf"></li>
+
+            <label for="curso">Curso</label>
+            <li><input type="text" id="curso"></li>
+
+            <label for="turma">Turma</label>
+            <li><input type="text" id="turma"></li>
+        </ul>
+
+        <div id="botao">
+            <button type="button" onclick="getDados()" id="btn-send">Enviar</button>
+            <button type="button" onclick="refresh()" id="refresh">Refresh</button>
+        </div>
+
+    </div>
+
+    <script src="custom.js"></script>
+</body>
+
+</html>
