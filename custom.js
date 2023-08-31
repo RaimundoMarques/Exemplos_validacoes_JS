@@ -110,7 +110,6 @@ function getDados() {
                 })
         }
         const aluno = new Aluno()
-        aluno.cpf = 7777777
         console.log(aluno)
 }
 
